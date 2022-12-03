@@ -21,8 +21,9 @@ def event_outcome(a, b):
     elif win_map[a] == b:
         r = 'win'
     else:
-        raise ValueError('Not a recognised moves!')
+        raise ValueError('Not a recognised move!')
     return r
+
 
 def result_tuple_from_string_pair(stringpair):
     s = stringpair.split(' ')
