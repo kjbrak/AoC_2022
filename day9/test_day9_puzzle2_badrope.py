@@ -1,3 +1,4 @@
+# This script is for the "correct" move rule for the knots on the rope.
 from collections import defaultdict
 
 data = open('day9/sample2_in9', 'r').read().split('\n')

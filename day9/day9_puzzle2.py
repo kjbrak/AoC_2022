@@ -22,7 +22,7 @@ d[(0,0)] += 1
 for s in data:
     dir = s[0]
     num = int(s[2:])
-    for i in range(num):
+    for _ in range(num):
         pos[0] = move(pos[0], dir)
         for k in list(pos.keys())[1:]:
             dx, dy = [h - t for h,t in zip(pos[k-1], pos[k])]
@@ -37,6 +37,4 @@ for s in data:
                 pos[k] = (x, y)
         d[pos[len(pos)-1]] += 1
 
-# Assertion error -> Note: rope does not follow the best rules, that is working in puzzle 1 !
-res2 = len(d)
-print(f"Result2: {res2}")
+print(f"Result2: {len(d)}")

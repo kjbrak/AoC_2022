@@ -27,6 +27,5 @@ for s in data:
         hpos = hpos_new
         d[tpos] += 1
 
-res = len(d)
 print(f"Result1: {len(d)}")
 
