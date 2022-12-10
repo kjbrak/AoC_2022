@@ -4,8 +4,8 @@ Note: this code will fail on assertion. It is for a more fluid rope with differe
 
 from collections import defaultdict
 
-data = open('day9/sample2_in9', 'r').read().split('\n')
-# data = open('day9/sample_in9', 'r').read().split('\n')
+data = open('day09/sample2_in9', 'r').read().split('\n')
+# data = open('day09/sample_in9', 'r').read().split('\n')
 
 
 def move(pos, dir):

@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-data = open('day9/in9', 'r').read().split('\n')
+data = open('day09/in9', 'r').read().split('\n')
 
 
 def move(pos, dir):

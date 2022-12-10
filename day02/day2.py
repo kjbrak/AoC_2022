@@ -5,7 +5,7 @@ resp= {'X':'rock', 'Y': 'paper', 'Z': 'scissors'}
 p = {'rock': 1, 'paper': 2, 'scissors': 3 }
 w = {'win': 6, 'draw': 3, 'lose': 0}
 
-fn = 'day2/day2_input.txt'
+fn = 'day02/day2_input.txt'
 with open(fn, 'r') as f:
     lines = f.read()
     lst = lines.split('\n')

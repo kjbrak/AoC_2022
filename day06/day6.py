@@ -1,4 +1,4 @@
-data = open('day6/in6', 'r').read()
+data = open('day06/in6', 'r').read()
 
 
 def find_marker(data, sig_len):

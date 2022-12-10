@@ -1,4 +1,4 @@
-data = open('day8/in8', 'r').read().split('\n')
+data = open('day08/in8', 'r').read().split('\n')
 
 def create_tree_neighbours(idx:tuple) -> tuple:
     y, x = idx

@@ -1,4 +1,4 @@
-data = open('day4/in4', 'r').read().split('\n')
+data = open('day04/in4', 'r').read().split('\n')
 
 # Puzzle1
 l = [tuple(s.replace('-',',').split(',')) for s in data]

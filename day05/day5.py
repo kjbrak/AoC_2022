@@ -1,7 +1,7 @@
 import re
 import copy
 
-data_stacks, data_proc = (s.split('\n') for s in open('day5/in5', 'r').read().split('\n\n'))
+data_stacks, data_proc = (s.split('\n') for s in open('day05/in5', 'r').read().split('\n\n'))
 l_tot = 9 * 3 + 9
 sl = [s+' '*(l_tot-len(s)) for s in data_stacks[:-1]]
 s_lst = [[re.sub('[\[\]]','', s[i:i+4]).strip() for i in range(0, len(s), 4)] for s in sl]

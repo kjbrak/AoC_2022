@@ -1,7 +1,7 @@
-# This script is for the "correct" move rule for the knots on the rope.
+#TODO: move func could be updated to reflect "new" rope rules and used on multiple knots.
 from collections import defaultdict
 
-data = open('day9/sample2_in9', 'r').read().split('\n')
+data = open('day09/in9', 'r').read().split('\n')
 
 
 def move(pos, dir):
@@ -22,7 +22,7 @@ d[(0,0)] += 1
 for s in data:
     dir = s[0]
     num = int(s[2:])
-    for i in range(num):
+    for _ in range(num):
         pos[0] = move(pos[0], dir)
         for k in list(pos.keys())[1:]:
             dx, dy = [h - t for h,t in zip(pos[k-1], pos[k])]
@@ -37,6 +37,4 @@ for s in data:
                 pos[k] = (x, y)
         d[pos[len(pos)-1]] += 1
 
-# Assertion error -> Note: rope does not follow the best rules, that is working in puzzle 1 !
-res2 = len(d)
-assert res2 == 36
+print(f"Result2: {len(d)}")

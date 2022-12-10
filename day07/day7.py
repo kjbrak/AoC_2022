@@ -1,6 +1,6 @@
 from copy import deepcopy
 
-data = open('day7/in7', 'r').read().split('\n')
+data = open('day07/in7', 'r').read().split('\n')
 filesize_max = 100000
 tree = {}
 cursor = '/'
