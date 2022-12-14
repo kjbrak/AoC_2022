@@ -36,7 +36,7 @@ def search(nodes, p_start, p_end_lst, graph_func):
         print(i)
         q = sorted(q, key=lambda x: min_cost[x])
         p = q.pop(0)
-        for px in (lst:=graph[p]):
+        for px in graph[p]:
             c_min = min_cost[p] + 1
             if c_min < min_cost[px]:
                 min_cost[px] = c_min
